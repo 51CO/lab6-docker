@@ -1,0 +1,7 @@
+FROM python:3.11-slim
+COPY reduc-operation-alumno05.ipynb .
+RUN pip install jupyter
+RUN pip install numpy
+RUN pip install numba
+EXPOSE 8080
+CMD ipython reduc-operation-alumno05.ipynb
